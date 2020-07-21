@@ -48,7 +48,7 @@ body {
  .menu a {
      text-decoration: none;
      color:  #404c59;
- }
+ }    
 
 .menu a:hover {
     border-bottom: 5px solid #FFC0CB;
@@ -63,11 +63,32 @@ body {
 
 
 
-                                                 /* Hero image style */
+                                                
+                                                 /* Hero image Here and style */
  
 
 .hero-image {
     height: 600px;
     width: 100%;
-    background: url('../images/-background.jpg') no-repeat center center fixed; 
+    background: url('../images/flowers-background.jpg') no-repeat center center fixed; 
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}   
+
+
+.hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
