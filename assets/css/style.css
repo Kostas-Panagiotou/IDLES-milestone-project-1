@@ -5,28 +5,43 @@
     padding: 0;
     border: 0;
 }
-                                              /* Style Body */
+                                                                              /* Style Body */
 body {
     font-family:    Catamaran, Oswald;
     color: #737191
 }
-    
-                                             /* Style H2 and logo */
+  
+                                                                      /* Style Alert banner-pre-order */
+
+
+.alert alert-danger {
+     border-radius: 0;
+     margin-bottom: 0;
+     padding: 10px 15px;
+}
+
+.alert-link {
+    padding-left:  0;
+    padding-right: 0;
+    letter-spacing: 4px;
+}
+
+                                                                               /* Style  logo */
 
 
 
 .logo {
     float: left;
-    font-size: 280%;
-    font-family:  Catamaran;
+    font-size: 500%;
+    font-family:  Oswald;
     text-transform: uppercase;
     color: #404c59;
     line-height: 75px;
+    margin-left: 30px;
 }
    
  
-   
-                                                /* Style Menu */
+                                                                                            /* Style Menu */
 
  .menu {
     font-size: 110%;
@@ -55,7 +70,7 @@ body {
 }
 
 
-                                                  /* Menu  links */
+                                                                                                     /* Menu  links */
     
 
 
@@ -64,17 +79,20 @@ body {
 
 
                                                 
-                                                 /* Hero image Here and style */
+                                                
+                                                                                            /* Hero image Here and style */
  
 
 .hero-image {
     height: 600px;
     width: 100%;
     background: url('../images/flowers-background.jpg') no-repeat center center fixed; 
-
+   
+    position: relative;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+
 }   
 
 
@@ -92,3 +110,80 @@ body {
         transform: scale(1.1);
     }
 }
+
+                                                                                     /*Page Headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+
+ .text .page-header {
+    margin-top: 25px;
+}
+
+
+                                                                                   /*Block dividers */
+ 
+
+
+
+.block-divider {
+    height: 5px;
+    border: 0;
+    background-color: rgba(20, 1, 1, 0.11);
+}
+
+
+                                                                                 /* Content Container */
+
+.content-container {
+    padding-top: 35px;
+    scroll-padding-bottom: 35px;
+}
+
+
+
+                                                                                /* i-frames Video Wrapper and youtube */
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+
+iframe  {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+iframe {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+                                                                                    /* Sign- up Footer Styles */
