@@ -7,7 +7,7 @@
 }
                                                                               /* Style Body */
 body {
-    font-family:    Catamaran, Oswald;
+    font-family:    "Catamaran", Oswald;
     color: #737191
 }
   
@@ -45,7 +45,7 @@ body {
 
  .menu {
     font-size: 110%;
-    font-family: Catamaran;
+    font-family: "Catamaran"  ,sans-serif;  
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 75px;
@@ -82,108 +82,141 @@ body {
                                                 
                                                                                             /* Hero image Here and style */
  
-
-.hero-image {
-    height: 600px;
+.hero-image{
+    height:600px;
     width: 100%;
     background: url('../images/flowers-background.jpg') no-repeat center center fixed; 
-   
-    position: relative;
+    
     animation-name: hero-zoom;
-    animation-duration: 5s;
+    animation-duration: 8s;
     animation-fill-mode: forwards;
 
-}   
+}
 
-
-.hero-outer {
-    height: 600px;
+.hero-outer{
+    height:600px;
     width: 100%;
-    overflow: hidden;
+    overflow:hidden;
+    position: relative;
 }
 
 @keyframes hero-zoom {
     from{
         transform: scale(1);
     }
-    to {
+    to{
         transform: scale(1.1);
     }
 }
 
-                                                                                     /*Page Headers */
-
-.page-header {
+                                                                               /* Text style and quotes */
+.text {
     margin-bottom: 0;
     border-bottom: 0;
     text-align: center;
+    
 }
 
-.page-header h2 {
+
+
+.text h3 {
     margin-top: 0;
 }
 
 
- .text .page-header {
+
+ .text  {
     margin-top: 25px;
 }
 
+.h4 {
+    text-align: center;
+}
 
-                                                                                   /*Block dividers */
- 
+                                                                                   /* Add Video  style i-frames */
 
 
+  iframe {
+     width: 50%;    
+     height: 50x;
+     display: block;
+     margin-right:  auto;
+     margin-left:  auto;
+     margin-top: 40px;
+  }
 
-.block-divider {
-    height: 5px;
-    border: 0;
-    background-color: rgba(20, 1, 1, 0.11);
+
+                                                                                          /* Sign- up Footer Styles */
+
+   .contact-heading {
+    
+    font-family: "Catamaran" , sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    
+}
+
+                                                                                                /* Button Styles */
+                                                                                   
+
+button[type="submit"] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin:auto;
+    display:block;
+    color: #FFC0CB;
+    background-color: rgba(8, 8, 8, 0.467);
+    
 }
 
 
-                                                                                 /* Content Container */
+                                                                                  /* ---------------------------------------- Media  */
 
-.content-container {
-    padding-top: 35px;
-    scroll-padding-bottom: 35px;
+
+@media(min-width:992px) {
+    .center-form {
+      padding-top: 30px;
+      min-height: 240px;
+      margin: 0 auto;
+      max-width: 30%;
 }
 
-
-
-                                                                                /* i-frames Video Wrapper and youtube */
-
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+.contact-heading , center-form {
+    background-color: #7777;
 }
 
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
+                                                                                            /* Social links styles/ Footer Styles */
+
+
+.social-links {
+     padding-bottom: 15px;
 }
 
-
-iframe  {
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
+.social-links li a i {
+    
+    
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+     color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
+    
+    
+   
 
-iframe {
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-}
+.social-links li a i:hover {
+    background: #FFC0CB;
 
-                                                                                    /* Sign- up Footer Styles */
+
