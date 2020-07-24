@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,600,700|Catamaran:100,200,300,400,500,600,700');
 
 *{
@@ -148,75 +149,83 @@ body {
 
                                                                                           /* Sign- up Footer Styles */
 
-   .contact-heading {
-    
-    font-family: "Catamaran" , sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    
-}
-
-                                                                                                /* Button Styles */
-                                                                                   
-
-button[type="submit"] {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin:auto;
-    display:block;
-    color: #FFC0CB;
-    background-color: rgba(8, 8, 8, 0.467);
-    
-}
-
-
-                                                                                  /* ---------------------------------------- Media  */
-
-
-@media(min-width:992px) {
-    .center-form {
-      padding-top: 30px;
-      min-height: 240px;
-      margin: 0 auto;
-      max-width: 30%;
-}
-
-}
-
-.contact-heading , center-form {
-    background-color: #7777;
-}
-
-                                                                                            /* Social links styles/ Footer Styles */
-
-
-.social-links {
-     padding-bottom: 15px;
-}
-
-.social-links li a i {
-    
-    
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-     color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-    
-    
    
+    .contanct-title {
+        margin-top: 100px;
+        color: #777;
+        text-transform: uppercase;
+        
+    }
 
-.social-links li a i:hover {
-    background: #FFC0CB;
+      .contanct-title h2 {
+          font-size: 32px;
+          line-height: 10px;
+      }
+                            
+      .contanct-title h3 {
+          font-size: 16px;
+         line-height: 50px;
+      }                      
+
+    
+     
+      .form {
+          margin-top: 50px;
+      }                      
+
+      .form-control {
+          width: 600px;
+          background: transparent;
+          border: none;
+          outline: none;
+          border-bottom: 1px solid gray;
+          color: #777;
+          font-size: 18px;
+          margin-bottom: 16px;
+          margin-left: auto;
+          margin-right: auto;
+          
+      }
+      
+      .input {
+          height: 45px;
+      }
+
+      form  .submit {
+          background: #FFC0CB;
+          border-color: transparent;
+          color: #fafafa;
+          font-size: 20px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          height: 50px;
+          margin-top: 15px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+       
 
 
+                            
+                                                                                                     /* Social links styles/ Footer Styles */
+
+
+   .centerdiv {
+       height: 70px;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       justify-content: center;
+       letter-spacing: 20px;
+       font-size: 30px;
+       
+   }
+
+   .fa {
+       color: #FFC0CB;
+   }
+
+   a:hover i {
+       transform: scale(1.4);
+   }
