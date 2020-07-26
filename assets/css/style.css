@@ -6,14 +6,18 @@
     padding: 0;
     border: 0;
 }
+
+
+
+
                                                                               /* Style Body */
 body {
     font-family:    "Catamaran", Oswald;
     color: #737191
-     
+   
     
 }
-  
+
                                                                       /* Style Alert banner-pre-order */
 
 
@@ -34,6 +38,7 @@ body {
 
 
 .logo {
+    
     float: left;
     font-size: 500%;
     font-family:  Oswald;
@@ -41,6 +46,7 @@ body {
     color: #404c59;
     line-height: 75px;
     margin-left: 30px;
+    
 }
    
  
@@ -76,21 +82,30 @@ body {
 
                                                                                                      /* Menu  links music */
     
- .wrapper {
-     width:auto; 
-     text-align:center; 
-     padding:20px; 
+ .container .content {
+     max-width:100%; 
+     padding-top:100%; 
+     margin: auto;
+     
+    
  }
 
 img {
     max-width:100%;
     height: auto;
     object-fit: contain;
-   
-    
+ }
+
+h1  {
+    margin-top: 150px;
     
 }
 
+p {
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-family: "Katamaran" , sans-serif;
+}
 
 
                                                 
@@ -153,7 +168,7 @@ img {
 
   iframe {
      width: 50%;    
-     height: 50x;
+    
      display: block;
      margin-right:  auto;
      margin-left:  auto;
