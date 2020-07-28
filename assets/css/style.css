@@ -46,28 +46,34 @@ body {
     color: #404c59;
     line-height: 75px;
     margin-left: 30px;
-    
+    margin-right: 30px;
 }
    
  
                                                                                             /* Style Menu */
 
 
- .menu {
+  .menu {
     font-size: 110%;
     font-family: "Catamaran"  ,sans-serif;  
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 75px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    
  }  
 
 .menu {
  float:right;
 }
+                                                                                                                    /* Menu  links music */
 
 .menu li {
  float:left;
  margin-right: 30px;
+ margin-left: 30px;
 }
  
  .menu a {
@@ -80,15 +86,28 @@ body {
 }
 
 
-                                                                                                     /* Menu  links music */
+                                                                                             /* Video page videos iframe */        
     
- .container .content {
-     max-width:100%; 
-     padding-top:100%; 
-     margin: auto;
-     
-    
- }
+
+    .embed-responsive embed-responsive {
+
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+       height:0;
+    }
+ 
+ .embed-responsive-item {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+   }
+
+
+
+                                                                             /* Music page img h1/p */   
 
 img {
     max-width:100%;
@@ -108,8 +127,13 @@ p {
 }
 
 
+
+
+                                                                             /* Live Page h1/h2/p */   
+
                                                 
-                                                
+    
+                            
                                                                                             /* Hero image Here and style */
  
 .hero-image{
@@ -140,6 +164,8 @@ p {
 }
  
                                                                                /* Text style and quotes */
+
+
 .text {
     margin-bottom: 0;
     border-bottom: 0;
@@ -163,17 +189,31 @@ p {
     text-align: center;
 }
 
-                                                                                   /* Add Video  style i-frames */
+                                                                                   
+
+                                                                                       /* Front Page video iframes */
 
 
-  iframe {
-     width: 50%;    
+
+
+  .iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+     
     
-     display: block;
-     margin-right:  auto;
-     margin-left:  auto;
-     margin-top: 40px;
-  }
+    
+  
 
 
                                                                                           /* Sign- up Footer Styles */
@@ -182,23 +222,26 @@ p {
         margin-top: 100px;
         color: #777;
         text-transform: uppercase;
-        
+        margin-left: auto;
+        margin-right: auto;
     }
 
-      .contanct-title h2 {
-          font-size: 32px;
+      .contanct-title , h2 {
+         font-size: 32px;
           line-height: 10px;
+          
       }
                             
-      .contanct-title h3 {
+      .contanct-title  h3 {
           font-size: 16px;
-         line-height: 50px;
+          line-height: 50px;
       }                      
 
     
      
       .form {
           margin-top: 50px;
+          
       }                      
 
       .form-control {
@@ -219,7 +262,7 @@ p {
           height: 45px;
       }
 
-      form  .submit {
+      .submit {
           background: #FFC0CB;
           border-color: transparent;
           color: #fafafa;
@@ -247,6 +290,7 @@ p {
        justify-content: center;
        letter-spacing: 20px;
        font-size: 30px;
+       transition: all 0.35s ease-in-out;
        
    }
 
@@ -254,8 +298,7 @@ p {
        color: #FFC0CB;
    }
 
-   a:hover i {
-       transform: scale(1.4);
-   }
-       
+   .fa:hover {
+      opacity: 0.7;
+   }    
      
