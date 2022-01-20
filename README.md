@@ -1,3 +1,12 @@
+<h1 align="center">IDLES</h1>
+
+[View the live project here.](https://kostas-panagiotou.github.io/IDLES-milestone-project-1/)
+
+This is my Milestone Project 1. It is a fan based music band site for the band IDLES.
+
+![](/assets/images/Idles.png)
+
+
 User Experience (UX)
 
 User stories
